@@ -15,6 +15,8 @@ const OrderDetailData = ({ order, editMode, onFieldChange }) => {
             onChange={(e) => onFieldChange("paymentMethod", e.target.value)}
           >
             <option value="Tarjeta">Tarjeta</option>
+            <option value="Oxxo">Oxxo</option>
+            <option value="Puntos">Pts Liverpool</option>
             <option value="Efectivo">Efectivo</option>
           </select>
         ) : (
