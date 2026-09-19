@@ -16,7 +16,7 @@ const OrderDetailData = ({ order, editMode, onFieldChange }) => {
           >
             <option value="Tarjeta">Tarjeta</option>
             <option value="Oxxo">Oxxo</option>
-            <option value="Puntos">Pts Liverpool</option>
+            <option value="Puntos Liverpool">Pts Liverpool</option>
             <option value="Efectivo">Efectivo</option>
           </select>
         ) : (
