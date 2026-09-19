@@ -7,8 +7,8 @@ import Header from "./components/Header";
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
-        <Header />
         <Route path="/" element={<OrderList />} />
         <Route path="/pedido/:id" element={<OrderDetail />} />
       </Routes>
