@@ -104,7 +104,8 @@ const OrderCreateModal = ({ show, onClose, onCreate, customers }) => {
             onChange={(e) => handleFieldChange("paymentMethod", e.target.value)}
           >
             <option value="Tarjeta">Tarjeta</option>
-            <option value="Tarjeta">Oxxo</option>
+            <option value="Oxxo">Oxxo</option>
+            <option value="Puntos">Pts Liverpool</option>
             <option value="Efectivo">Efectivo</option>
           </select>
         </div>
