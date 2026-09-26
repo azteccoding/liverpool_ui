@@ -142,12 +142,13 @@ function OrderList() {
         ))}
       </div>
 
-      <OrderCreateModal
-        show={showModal}
-        onClose={() => setShowModal(false)}
-        onCreate={handleCreate}
-        customers={customers}
-      />
+      {showModal && (
+        <OrderCreateModal
+          onClose={() => setShowModal(false)}
+          onCreate={handleCreate}
+          customers={customers}
+        />
+      )}
     </div>
   );
 }

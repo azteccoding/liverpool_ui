@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const emptyItem = { sku: "", quantity: 1, productName: "", unitPrice: 0 };
 
-const OrderCreateModal = ({ show, onClose, onCreate, customers }) => {
+const OrderCreateModal = ({ onClose, onCreate, customers }) => {
   const [formData, setFormData] = useState({
     date: new Date().toISOString().split("T")[0],
     paymentMethod: "Tarjeta",
@@ -11,8 +11,6 @@ const OrderCreateModal = ({ show, onClose, onCreate, customers }) => {
     customerId: customers[0]?.id ?? "",
   });
   const [items, setItems] = useState([{ ...emptyItem }]);
-
-  if (!show) return null;
 
   const handleFieldChange = (field, value) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
